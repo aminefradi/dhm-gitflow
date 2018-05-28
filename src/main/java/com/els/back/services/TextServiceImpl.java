@@ -15,7 +15,7 @@ public class TextServiceImpl implements TextService{
         + text.chars().filter(ch -> ch == Punctuation.DEUX_POINTS.toString().charAt(0)).count()
         + text.chars().filter(ch -> ch == Punctuation.POINT_EXCLAMATION.toString().charAt(0)).count()
         + text.chars().filter(ch -> ch == Punctuation.POINT_INTERROGATION.toString().charAt(0)).count();
-        //ft-y change 1..
+        //ft-y change 1...
 
     }
 
