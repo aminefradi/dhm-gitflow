@@ -9,7 +9,7 @@ public class TextServiceImpl implements TextService{
     @Override
     public long getPunctuationsNumber(String text){
 
-        //ft-x change 1.
+        //ft-x change 1..
 
         return text.chars().filter(ch -> ch == Punctuation.VIRGULE.toString().charAt(0)).count()
         + text.chars().filter(ch -> ch == Punctuation.POINT.toString().charAt(0)).count()
