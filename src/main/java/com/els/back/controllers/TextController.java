@@ -26,7 +26,7 @@ public class TextController {
     @RequestMapping(value = "/numberPunctuations", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<String> getPunctuations(@RequestBody String message) {
 
-        long numberOfPunctuations = textService.getPunctuationsNumber(message);
+        int numberOfPunctuations = (int)textService.getPunctuationsNumber(message);
 
         return new ResponseEntity<>("{\"value\":" + String.valueOf(numberOfPunctuations) + "}", HttpStatus.OK);
     }
